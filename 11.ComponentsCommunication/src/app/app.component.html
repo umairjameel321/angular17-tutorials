@@ -1,0 +1,6 @@
+<div>
+  <h1>Task List</h1>
+  @for (task of tasks; track task) {
+  <app-task [val]="task" (taskDeleted)="deleteTask(task)"></app-task>
+  }
+</div>

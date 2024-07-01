@@ -1,0 +1,25 @@
+<!-- {{ title }}
+
+@if (a > b) {
+{{ a }} is greater than {{ b }}
+} @else if (b > a) {
+{{ a }} is less than {{ b }}
+} @else {
+{{ a }} is equal to {{ b }}
+}  -->
+
+<!-- @for (item of items; track item.id; let i = $index; let total = $count) {
+{{ i }}{{ item.name }}
+} -->
+
+<!-- $first, $last, $even, $odd -->
+
+@switch (grade) { @case ('A') {
+<p>Excellent</p>
+} @case ('B') {
+<p>Good</p>
+} @case ('C') {
+<p>Bad</p>
+} @default {
+<p>Unknown</p>
+} }

@@ -1,0 +1,23 @@
+<h1>About Page</h1>
+
+<nav>
+  <ul>
+    <li>
+      <a routerLink="/about/projects" routerLinkActive="active">Projects</a>
+    </li>
+    <li>
+      <a
+        routerLink="/about/projects"
+        [queryParams]="{ projectId: 2 }"
+        routerLinkActive="active"
+      >
+        Projects with project id 2</a
+      >
+    </li>
+    <li>
+      <a routerLink="/about/sponsors" routerLinkActive="active">Sponsors</a>
+    </li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>

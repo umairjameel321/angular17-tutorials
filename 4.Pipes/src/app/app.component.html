@@ -1,0 +1,20 @@
+<!-- <h1>{{ title | lowercase }}</h1>
+<h1>{{ title | uppercase }}</h1> -->
+
+<!-- <div>
+  <p>Today is {{ today }}</p>
+  <p>Today is {{ today | date }}</p>
+  <p>Today is {{ today | date : "fullDate" | uppercase }}</p>
+  <p>Today is {{ today | date : "short" }}</p>
+  <p>Today is {{ today | date : "medium" }}</p>
+  <p>Today is {{ today | date : "long" }}</p>
+  <p>Today is {{ today | date : "full" }}</p>
+  <p>Today is {{ today | date : "h:mm:s" }}</p>
+</div> -->
+
+<p>{{ currency | currency }}</p>
+<p>{{ currency | currency : "EUR" : "symbol" : "1.1-4" }}</p>
+
+<p>{{ currency | percent : "" }}</p>
+
+<p>{{ title | append : "new text" | uppercase }}</p>

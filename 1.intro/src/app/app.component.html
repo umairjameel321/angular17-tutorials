@@ -1,0 +1,25 @@
+Hello, {{ title }}
+
+<button [disabled]="isDisabled" type="button">{{ myBtn }}</button>
+<img [src]="angularImage" width="100" height="100" alt="angular image" />
+
+<div [style.backgroundColor]="bgColor">
+  <h2 [style.color]="titleColor">Title</h2>
+  <p [style]="description">Description</p>
+</div>
+
+<h2 [class.textColor]="redText == 'abcd'">Title</h2>
+
+<button (click)="incrementCouter()">Increment</button>
+<p>Counter: {{ counter }}</p>
+
+<input [(ngModel)]="inputText" placeholder="Enter text" />
+<p>You entered: {{ inputText }}</p>
+
+<div [ngClass]="classes">
+  {{ message }}
+</div>
+
+<div class="color-box" [ngStyle]="{ 'background-color': selectedColor }">
+  Box
+</div>

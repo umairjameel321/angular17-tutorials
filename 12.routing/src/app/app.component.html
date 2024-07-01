@@ -1,0 +1,26 @@
+<h1>Routing</h1>
+
+<nav>
+  <ul>
+    <li>
+      <a routerLink="/" routerLinkActive="active"> Home </a>
+    </li>
+    <li>
+      <a routerLink="/notes" routerLinkActive="active"> Notes </a>
+    </li>
+    <div>
+      <button (click)="navigateToNotes()">Go to Notes</button>
+      <button (click)="navigateToNote(4)">Go to Note 4</button>
+    </div>
+    <div>
+      <a [routerLink]="['/notes', '1']">Note 1</a><br />
+      <a [routerLink]="['/notes', '2']">Note 2</a><br />
+      <a [routerLink]="['/notes', '3']">Note 3</a><br />
+    </div>
+    <div>
+      <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+    </div>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>

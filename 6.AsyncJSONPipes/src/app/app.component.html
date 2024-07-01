@@ -1,0 +1,9 @@
+<div *ngIf="user | async as user">
+  <p>Name: {{ user.name }}</p>
+  <p>Email: {{ user.email }}</p>
+</div>
+
+<div>
+  <h1>User Data</h1>
+  <pre>{{ userData | json }}</pre>
+</div>
